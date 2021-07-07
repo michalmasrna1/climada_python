@@ -942,7 +942,7 @@ def generate_WS_forecast_hazard(run_datetime = dt.datetime.today().replace(hour=
                                               event_date.strftime('%Y%m%d')
                                               +
                                               '.hdf5')   
-        if haz_file_name.exists():
+        if haz_file_name.exists() and False:
             LOGGER.info('Loading hazard from ' + 
                         str(haz_file_name) + 
                         '.')
